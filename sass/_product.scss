@@ -1,0 +1,49 @@
+.product{
+    grid-row: 3 / 4;
+    grid-column: full-bleed / ends;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: minmax(50%, min-content)  1fr;
+
+    margin-top: 20rem;
+
+    @media only screen and  (max-width: $bp-medium) {
+        grid-column: starts / ends;
+
+    }
+
+    &__img{
+        max-width: 100%;
+        height: auto;
+
+        @media only screen and  (max-width: $bp-medium) {
+            display: none;
+    
+        }
+    
+    }
+
+    &__text{
+        justify-self: end;
+
+        @media only screen and  (max-width: $bp-medium) {
+            grid-column: 1 / 3;
+            justify-self: start;
+
+    
+        }
+    }
+
+    .heading-3{
+        margin-bottom: 1.5rem;
+    }
+
+    .heading-1{
+        margin-bottom: 9rem;
+    }
+
+    .btn{
+        padding: 2.7rem 10.5rem;
+    }
+}
