@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Skatelord - Product</title>
+</head>
+<body class="container-product">
+    <header class="header header-product">
+        <input id="toggle" type="checkbox">
+
+        
+        <label class="toggle-container" for="toggle">
+        
+        <span class="button button-toggle"></span>
+        </label>
+
+        <nav class="nav">
+            <h1 class="logo">Skate<span>lord</span></h1>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Overview</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Specs</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__text">
+            <div>
+                <h1 class="heading-1">Boosted Board <span>,</span></h1>
+                <h2 class="heading-2">Super electric skateboard</h2>
+            </div>
+
+            <div class="specs">
+                <div class="specs__box">
+                    <img src="/img/icon-speed.png" alt="Speed meter icon" class="specs__icon">
+                    <span class="specs__name">Top Speed</span>
+                    <span class="specs__value">23 Km/h</span>
+                </div>
+
+                <div class="specs__box">
+                    <img src="/img/icon-battery.png" alt="Battery icon" class="specs__icon">
+                    <span class="specs__name">Battery life</span>
+                    <span class="specs__value">3h 15m</span>
+                </div>
+
+                <div class="specs__box">
+                    <img src="/img/icon-wave.png" alt="Range icon" class="specs__icon">
+                    <span class="specs__name">Extended range</span>
+                    <span class="specs__value">38 Kilometers</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header__details">
+            <img src="img/product-page-edited.png" alt="Big skateboards from the back" class="header-product__img target">
+
+            <div class="header__details--box">
+                <h1 class="heading-1">$1199.00<span>*</span></h1>
+                <p class="header__details--text mb-small">Shipping worldwide</p>
+
+                <button class="btn btn-disabled mb-medium">SOLD OUT !</button>
+
+                <p class="header__details--text break"><span>*</span> Includes taxes</p>
+                <p class="header__details--text"><span>*</span> doesn't include shipping</p>
+            </div>
+        </div>
+
+
+    </header>
+
+    <section class="overview">
+        <div class="overview__box overview__box--1">
+            <div class="overview__specs--box">
+                <p class="overview__specs">
+                    <span class="overview__specs--name">Motors: </span> The Looper Drive™ has no gears, no belts, and no limitations.
+                </p>
+                <p class="overview__specs">
+                    <span class="overview__specs--name">Splash Resistant: </span> Splash resistant with an IP54 rating
+                </p>
+               <p class="overview__specs">
+                      <span class="overview__specs--name">Refined Over Time: </span> Upgradable performance and efficiency with firmware updates.
+                 </p>
+            </div>
+             <!-- <img src="img/product-page-overview-1.png" alt="Skateboard image" class="overview__img--1"> -->
+        </div>
+
+        <div class="overview__box overview__box--2">
+            <div class="overview__text--box">
+                <p class="overview__text">
+                     Experience the most advanced e-board deck ever developed. A custom designed composite deck that combines an inverted 3D Poplar wood core 
+                     with full sandwich PU sidewalls and wrapped in the same fiberglass top sheet found in premium snowboards and skis. Integrated electronics, 
+                     reinforced truck mounting points, and resilient TPU nose and tail bumpers at the rails yield a remarkably light and durable platform optimized for a more responsive ride.
+                </p>
+            </div>
+                 <!-- <img src="img/product-page-overview-2.png" alt="Skateboard image" class="overview__img--1"> -->
+            </div>
+    
+
+    </section>
+
+
+    <footer class="footer footer-product">
+            <h1 class="logo logo-small">Skate<span>lord</span></h1>
+    
+            <ul class="footer__list">
+                <li class="footer__item"><a href="index.html" class="footer__link">About us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Product</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Collection</a></li>
+            </ul>
+    
+            <p class="copy_right">All right reserved by Sami</p>
+        </footer>
+    
+
+
+        <script>
+
+
+                window.addEventListener('scroll', function(e){
+                    const target = document.querySelector('.target');
+        
+                    var scrolled = window.pageYOffset;
+                    var rate = scrolled * 0.5;
+                    
+                    if (getWidth() < 1155){
+                        target.style.transform = `translate3d(${-rate + 200}px, 50%, 0)`
+                    } else{
+                        target.style.transform = `translate3d(${-rate}px, 0, 0)`
+
+                    }
+                })
+        
+
+
+
+                function getWidth() {
+                    return Math.max(
+                    document.body.scrollWidth,
+                    document.documentElement.scrollWidth,
+                    document.body.offsetWidth,
+                    document.documentElement.offsetWidth,
+                    document.documentElement.clientWidth
+                    );
+                }
+                
+                function getHeight() {
+                    return Math.max(
+                    document.body.scrollHeight,
+                    document.documentElement.scrollHeight,
+                    document.body.offsetHeight,
+                    document.documentElement.offsetHeight,
+                    document.documentElement.clientHeight
+                    );
+                }
+
+            </script>
+        
+</body>
+</html>

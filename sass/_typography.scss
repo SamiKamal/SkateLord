@@ -10,8 +10,11 @@
 .heading-1{
     font-size: 5rem;
     font-weight: 700;
-    text-transform: uppercase;
 
+    &-home{
+        text-transform: uppercase;
+
+    }
     span{
         color: $color-primary;
     }

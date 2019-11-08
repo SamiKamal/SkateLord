@@ -1,0 +1,123 @@
+.overview{
+    grid-column: 1 / -1;
+    grid-row: 2/3;
+    color: white;
+    background-color: $color-grey;
+    clip-path: polygon(0 0, 100% 6%, 100% 100%, 0% 100%);
+            background-image: url('../img/Group\ 13.png');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+
+        
+        @media only screen and  (max-width: $bp-medium) {
+            background-size: contain;
+            background-position: 20% 90rem;
+
+        }
+
+
+    &__box--1{
+        min-height: 1200px;
+        position: relative;
+        // background-image: url('../img/product-page-overview-1.png');
+        // background-size: contain;
+        // background-position: top;
+        // background-repeat: no-repeat;
+
+        @media only screen and  (max-width: $bp-medium) {
+            min-height: 600px;
+
+        }
+
+    }
+
+    &__specs{
+        display: block;
+        width: 257px;
+        font-size: 1.6rem;
+        font-weight: 300;
+
+
+        &--name{
+            font-weight: 500;
+        }
+
+        &--box{
+            position: absolute;
+            right: 51rem;
+            top: 29rem;
+
+            :not(:last-child){
+                margin-bottom: 1.4rem;
+            }    
+
+
+            @media only screen and  (max-width: $bp-medium) {
+                top: -30rem;
+                left: 4rem;
+
+            }
+        
+        }
+    }
+
+
+
+
+    &__box--2{
+        transform: translateY(-12vw);
+        min-height: 1200px;
+        position: relative;
+        // background-image: url('../img/product-page-overview-2.png');
+        // background-size: contain;
+        // background-position: top;
+        // background-repeat: no-repeat;
+
+        @media only screen and  (max-width: $bp-medium) {
+            transform: translateY(-15vw);
+            min-height: 600px;
+
+        }
+        
+
+    }
+
+    &__text{
+        display: block;
+        max-width: 60rem;
+        font-size: 2.2rem;
+        font-weight: 400;
+
+        &--box{
+            position: absolute;
+            top: 40rem;
+            left: 15rem;
+
+            @media only screen and  (max-width: $bp-medium) {
+                top: -130rem;
+                left: 4rem;
+
+            }
+
+        }
+    }
+
+
+
+
+    @media only screen and  (max-width: $bp-medium) {
+        &::before{
+            content: '';
+            display: block;
+            background-color: $color-secondary;
+            height: 90rem;
+            width: 100%;
+            position: relative;
+            clip-path: polygon(0 0, 100% 2%, 100% 130%, 0% 100%);
+
+        }
+
+    }
+
+}
