@@ -75,6 +75,10 @@ body {
   font-size: 4rem;
   font-weight: 500; }
 
+.headingg-link{
+  color: initial;
+  text-decoration: none;}
+
 .header {
   display: grid;
   grid-column: starts / ends;
@@ -177,6 +181,7 @@ body {
     margin-top: 5rem; }
     @media only screen and (max-width: 56.25em) {
       .header-product .specs {
+        margin-top: 5rem;
         justify-content: center; } }
     .header-product .specs__box {
       display: flex;

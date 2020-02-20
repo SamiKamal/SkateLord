@@ -19,11 +19,11 @@
         </label>
 
         <nav class="nav">
-            <h1 class="logo">Skate<span>lord</span></h1>
+           <a href="index.html" class="headingg-link"> <h1 class="logo"> Skate<span>lord</span></h1></a>
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+                <li class="nav__item"><a href="#about-us" class="nav__link">About us</a></li>
                 <li class="nav__item"><a href="product.html" class="nav__link">Product</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Collection</a></li>
+                <li class="nav__item"><a href="#collection" class="nav__link">Collection</a></li>
             </ul>
         </nav>
 
@@ -31,12 +31,12 @@
             <h3 class="heading-3">Try it out <span>!</span></h3>
             <h1 class="heading-1 heading-1-home">Amazing skateboards <span>,</span> <br> New life new skate</h1>
         </div>
-        <button class="btn">Check out collection</button>
+        <button class="btn" onclick="window.location.href='product.html'">Check out collection</button>
 
         <img src="img/hero-section.png" alt="Big skateboards from the front" class="header__img target">
 
 
-        <div class="header__about-us">
+        <div class="header__about-us" id="about-us">
             <h3 class="heading-3">How did we begin <span>?</span></h3>
             <h2 class="heading-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum leo quis mauris molestie dictum. Sed sed est ac enim gravida tempor a at tortor. Cras at nibh ac dolor pretium tempus. Donec blandit
@@ -45,7 +45,7 @@
     </header>
 
     <main class="content">
-        <div class="collection">
+        <div class="collection" id="collection">
             <h1 class="heading-1 heading-1-home">Our Collection</h1>
 
             <div class="collection__content">
@@ -117,7 +117,7 @@
         <div class="product__text">
             <h3 class="heading-3">How dare you <span>!</span></h3>
             <h1 class="heading-1 heading-1-home">Amazing Skateboard <span>,</span> <br> New design new way</h1>
-            <button class="btn">Check it out</button>
+            <button class="btn" onclick="window.location.href='product.html'">Check it out</button>
         </div>
     </section>
 
@@ -125,16 +125,17 @@
         <h1 class="logo logo-small">Skate<span>lord</span></h1>
 
         <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">About us</a></li>
+            <li class="footer__item"><a href="#about-us" class="footer__link">About us</a></li>
             <li class="footer__item"><a href="product.html" class="footer__link">Product</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Collection</a></li>
+            <li class="footer__item"><a href="#collection" class="footer__link">Collection</a></li>
         </ul>
 
         <p class="copy_right">All right reserved by Sami</p>
     </footer>
 
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/smooth-scroll.js"></script>
     <script>
         
         window.addEventListener('scroll', function(e){
@@ -145,8 +146,6 @@
 
             target.style.transform = `translateY(-${rate}px)`
         })
-
-
     </script>
 </body>
 </html>
